@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize" >
+    
+    <Button
+        android:id="@+id/btn_open_health_booklet"
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Open Health Booklet"
+        android:textColor="@color/white"/>
+    
+    <TextView
+        android:id="@+id/txt_more_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_above="@id/btn_open_health_booklet"
+        android:text="More information on Screenings can be found on Health Booklet"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:divider="@color/grey_400" />
+          
+	 <ListView
+        android:id="@+id/screening_summary_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/txt_more_info"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:divider="@color/grey_400"
+        android:footerDividersEnabled="true"/>
+	 
+</RelativeLayout>

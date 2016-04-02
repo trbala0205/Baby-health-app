@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="12dip"
+    android:paddingBottom="12dip"
+    style="@style/LinearLayout">
+ 
+    <!--  ListRow Left side Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:layout_centerVertical="true">
+ 
+        <ImageView
+            android:id="@+id/my_thumbnail_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/health_booklet_menu_new2_03"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Middle Menu Name-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/thumbnail"
+        android:layout_toRightOf="@id/thumbnail"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/my_menu_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="3dip"
+	        android:gravity="center"
+	        android:text=""
+	        android:textColor="#040404"
+	        android:textSize="14dp"
+	        android:textStyle="bold"/>
+	    
+	    <TextView
+	        android:id="@+id/my_menu_hint"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text=""
+	        android:textColor="@color/grey_600"
+	        android:textSize="12dp"
+	        android:textStyle="normal"/>
+ 	</LinearLayout>
+    
+     <!-- Rightend Arrow -->
+     <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+ 
+</RelativeLayout>

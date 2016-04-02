@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_gradient"
+    android:fadingEdge="none"
+    android:fillViewport="false"
+    android:scrollbarSize="0dp"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="none"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BabyMainActivity">
+    
+    <!-- android:background="@drawable/bg_shape_shadow" -->
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Baby"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" /> -->
+
+		<ImageView
+             android:id="@+id/img_logo"
+             android:layout_width="140dp"
+             android:layout_height="170dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="20dp"
+             android:background="@drawable/img_logo"
+             android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_form_rounded"
+            android:orientation="vertical" >
+
+            <com.main.java.babyapp.customviews.CustomEditText
+                android:id="@+id/txt_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:hint="@string/txt_email"
+                android:padding="5dp" 
+                android:singleLine="true"
+                android:drawableLeft="@drawable/ic_mail1"
+                android:drawablePadding="10dp"
+                android:textSize="14sp"/>
+			
+            <View 
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:paddingLeft="0dp"
+				android:paddingRight="0dp"
+				android:background="@color/grey_300"/>
+            
+            <com.main.java.babyapp.customviews.CustomEditText
+                android:id="@+id/txt_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@null"
+                android:hint="@string/txt_password"
+                android:inputType="textPassword"           
+                android:padding="5dp"
+                android:drawableLeft="@drawable/ic_password1"
+                android:drawablePadding="10dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <com.main.java.babyapp.customviews.CustomButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/signin" 
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            style="@style/Button"/>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+			android:layout_marginRight="30dp"
+			android:background="@color/white"/>
+        
+        <com.main.java.babyapp.customviews.CustomButton
+            android:id="@+id/btn_login_with_facebook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/sign_in_with_facebook" 
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            style="@style/Button"/>
+        
+        <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:gravity="center">
+	        
+		    <com.main.java.babyapp.customviews.CustomTextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Forgot password?"
+		        android:textColor="@color/grey_700"
+		        android:clickable="true"
+		        android:onClick="openForgotPasswordDialog"
+		        android:textStyle="bold"/>
+		    
+		    <com.main.java.babyapp.customviews.CustomTextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text=" / Sign Up"
+		        android:textColor="@color/grey_700"
+		        android:clickable="true"
+		        android:onClick="gotoSignupPage"
+		        android:textStyle="bold"/>
+	    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

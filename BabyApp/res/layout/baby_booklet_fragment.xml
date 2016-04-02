@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fadingEdge="none"
+    android:fillViewport="false"
+    android:scrollbarSize="0dp"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="none" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+   		android:layout_height="match_parent"
+   		android:orientation="vertical">
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="178dp"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:background="@color/colorPrimaryDark" >
+		    
+		    <!-- <TextView
+		        android:id="@+id/textView"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:paddingTop="10dp"
+		        android:paddingBottom="5dp"
+		        android:fontFamily="sans-serif-light"
+			 	android:textSize="14sp"
+		        android:layout_marginLeft="5dp"
+		        android:text="- A life may depend on a gesture from you, a bottle of Blood. \n- To give blood you need neither extra strength nor extra food,and you will save a life."
+		        android:textAppearance="?android:attr/textAppearanceMedium"
+		        android:textColor="#000000" /> -->
+		        
+		        <ImageView
+		            android:id="@+id/img_logo"
+		            android:layout_width="120dp"
+		            android:layout_height="150dp"
+		            android:layout_marginTop="20dp"
+		            android:layout_marginBottom="20dp"
+		            android:background="@drawable/img_logo"
+		            android:gravity="center" />
+		        
+		        <LinearLayout 
+		            android:layout_width="match_parent"
+		    		android:layout_height="wrap_content"
+		    		android:layout_toRightOf="@id/img_logo"
+		    		android:orientation="vertical">
+		    		
+		            <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="left"
+				        android:paddingTop="20dp"
+				        android:paddingBottom="5dp"
+					 	android:textStyle="bold"
+				        android:layout_marginLeft="5dp"
+				        android:text="Hello !"
+				        android:textAppearance="?android:attr/textAppearanceMedium"
+				        android:textColor="#FFFFFF" />
+		            
+		            <TextView
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="left"
+				        android:paddingTop="10dp"
+				        android:paddingBottom="5dp"
+					 	android:textStyle="bold"
+				        android:layout_marginLeft="5dp"
+				        android:text="Lets start by adding your baby's bio."
+				        android:textAppearance="?android:attr/textAppearanceSmall"
+				        android:textColor="#FFFFFF" />
+		            
+		            <Button
+			            android:id="@+id/btn_addbio"
+			            android:layout_width="fill_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="20dp"
+	            		android:layout_marginBottom="5dp"
+			            android:text="@string/add_bio" 
+			            android:textColor="@color/white"
+			            style="@style/Button"/>
+				            
+		        </LinearLayout>
+	    
+	    </RelativeLayout>
+	    
+		<LinearLayout
+		    android:id="@+id/listview_layout"
+	        android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:orientation="vertical"
+	   		android:background="@color/white">
+			<!-- <ListView
+		        android:id="@+id/my_booklet_listview"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="0dp"
+		        android:layout_marginLeft="0dp"
+		        android:layout_marginRight="0dp"
+		        android:paddingLeft="0dp"
+		        android:paddingRight="0dp"
+		        android:dividerHeight="1dp"
+		        android:scrollbars="none"
+		        android:divider="@color/grey_400"
+		        android:footerDividersEnabled="true"/> -->
+		</LinearLayout>
+		
+		<View
+			android:background="@color/grey_400"
+			android:layout_width="fill_parent"
+			android:layout_height="1dp" />
+		
+		<LinearLayout 
+	        android:layout_width="match_parent"
+	   		android:layout_height="0dp"
+	   		android:orientation="horizontal"
+	   		android:measureWithLargestChild="true"
+	   		android:layout_weight="2"
+	   		android:background="@color/white">
+	        
+	        <LinearLayout 
+	            android:id="@+id/health_booklet_layout"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="fill_parent"
+	    		android:orientation="vertical"
+	    		android:gravity="center"
+	    		android:layout_weight="1"
+	    		style="@style/LinearLayout"
+	    		android:clickable="true">
+	    		
+	    		<ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingTop="10dp"
+		            android:src="@drawable/health_booklet_menu_new2_03"/>
+	    		
+	    		<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/my_menu_name"
+			        android:layout_toRightOf="@+id/thumbnail"
+			        android:paddingTop="10dp"
+			        android:paddingBottom="10dp"
+			        android:text="Health Booklet"
+			        android:textColor="@color/grey_600"
+			        android:textSize="12dp"
+			        android:singleLine="true"
+			        android:textStyle="normal"/>
+	        </LinearLayout>
+	         
+	        <View
+			android:background="@color/grey_400"
+			android:layout_width="1dp"
+			android:layout_height="fill_parent" />
+	        
+	        <LinearLayout 
+	            android:id="@+id/encyclopedia_layout"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="fill_parent"
+	    		android:orientation="vertical"
+	    		android:gravity="center"
+	    		android:layout_weight="1"
+	    		android:clickable="true"
+	   			style="@style/LinearLayout">
+	    		
+	    		<ImageView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingTop="10dp"
+		            android:src="@drawable/health_booklet_menu_new2_03"/>
+	    		
+	    		<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/my_menu_name"
+			        android:layout_toRightOf="@+id/thumbnail"
+			        android:paddingTop="10dp"
+			        android:paddingBottom="10dp"
+			        android:text="Encyclopedia"
+			        android:textColor="@color/grey_600"
+			        android:textSize="12dp"
+			        android:singleLine="true"
+			        android:textStyle="normal"/>
+	        </LinearLayout>
+		        
+	   </LinearLayout>
+   </LinearLayout>
+	
+</ScrollView>

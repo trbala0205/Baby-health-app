@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+	        <android.support.v7.widget.Toolbar
+	            android:id="@+id/toolbar"
+	            android:layout_width="match_parent"
+	            android:layout_height="?attr/actionBarSize"
+	            android:background="?attr/colorPrimary"
+	            app:layout_scrollFlags="enterAlways"
+	            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+	            
+	            <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:text="Health Booklet"
+			        android:textStyle="bold"
+			        android:textSize="16dp"
+			        android:textColor="@color/white"
+			        android:id="@+id/toolbar_title" />
+	            
+            </android.support.v7.widget.Toolbar>
+	    
+    </android.support.design.widget.AppBarLayout>
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="?attr/actionBarSize"
+	    android:orientation="vertical" 
+	    android:background="@color/white">
+	    
+			
+            <com.zhy.view.CircleMenuLayout
+                android:id="@+id/id_circlelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_with_border"
+                android:padding="0dp" >
+                <RelativeLayout
+		            android:id="@id/id_circle_menu_item_center"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content" >
+	            </RelativeLayout>
+            </com.zhy.view.CircleMenuLayout>
+			
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	   		android:layout_height="0dp"
+	   		android:orientation="horizontal"
+	   		android:layout_weight="2"
+	   		android:background="@color/white">
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	    		android:layout_height="fill_parent"
+	    		android:orientation="vertical"
+	    		android:gravity="center"
+	    		android:layout_weight="1"
+	    		android:clickable="true"
+	    		style="@style/LinearLayout">
+	    		
+	    		<ImageView
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:src="@drawable/health_booklet_note"/>
+	    		
+	    		<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingTop="10dp"
+			        android:gravity="center"
+			        android:text="Developmental Screening"
+			        android:textColor="@color/colorPrimary"
+			        android:textSize="12sp"
+			        android:singleLine="true"
+			        android:textStyle="normal"/>
+	        </LinearLayout>
+	         
+	        <View
+				android:background="@color/grey_400"
+				android:layout_width="1dp"
+				android:layout_height="fill_parent"
+				android:layout_marginTop="25dp"
+				android:layout_marginBottom="25dp" />
+	        
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	    		android:layout_height="fill_parent"
+	    		android:orientation="vertical"
+	    		android:gravity="center"
+	    		android:layout_weight="1"
+	    		android:clickable="true"
+	   			style="@style/LinearLayout">
+	    		
+	    		<ImageView
+		            android:layout_width="30dp"
+		            android:layout_height="30dp"
+		            android:src="@drawable/health_booklet_note"/>
+	    		
+	    		<TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingTop="10dp"
+			        android:gravity="center"
+			        android:text="Child Safety Checklist"
+			        android:textColor="@color/colorPrimary"
+			        android:textSize="12dp"
+			        android:singleLine="true"
+			        android:textStyle="normal"/>
+	        </LinearLayout>
+		        
+	   </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

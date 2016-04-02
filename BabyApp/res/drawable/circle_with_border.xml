@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item>
+	    <shape
+		    android:innerRadius="110dp"
+		    android:shape="ring"
+		    android:thicknessRatio="2"
+		    android:useLevel="false" >
+		    <solid android:color="@android:color/transparent" />
+		
+		    <stroke
+		        android:width="10dp"
+		        android:color="@color/grey_200" />
+		</shape>
+	</item>
+    
+    <item
+        android:top="130dp" 
+        android:left="130dp" 
+        android:right="130dp" 
+        android:bottom="130dp" >
+        <shape android:shape="oval">
+            <solid android:color="@color/colorPrimary" />
+        </shape>
+    </item>
+    
+    <item
+        android:width="50dp"
+        android:height="40dp"
+        android:drawable="@drawable/health_booklet_doctor_bag" 
+        android:bottom="155dp"
+        android:left="155dp"
+        android:right="155dp"
+        android:top="155dp"/>
+</layer-list>

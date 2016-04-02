@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    style="@style/LinearLayout">
+ 
+    <!-- Rightend Arrow -->
+     <CheckBox 
+        android:id="@+id/my_screening_mark_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:button="@drawable/checkbox_selector"/>
+     
+    <!-- Middle Menu Name-->
+    <TextView
+        android:id="@+id/my_menu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/my_screening_mark_img"
+        android:text="sdfsdf"
+        android:inputType="textMultiLine"
+        android:textColor="@color/grey_500"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:textStyle="normal"/>
+       
+</RelativeLayout>
