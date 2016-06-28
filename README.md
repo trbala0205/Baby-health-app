@@ -24,8 +24,6 @@ Screenshots
 
 ![ScreenShot](https://github.com/trbala0205/Baby-health-app/blob/master/screenshots/8.add_edit_bio.png?raw=true)
 
-![ScreenShot](https://github.com/trbala0205/Baby-health-app/blob/master/screenshots/add_bio_page.png?raw=true)
-
 ![ScreenShot](https://github.com/trbala0205/Baby-health-app/blob/master/screenshots/encyclopedia.png?raw=true)
 
 ![ScreenShot](https://github.com/trbala0205/Baby-health-app/blob/master/screenshots/forgot_password.png?raw=true)
