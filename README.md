@@ -8,6 +8,7 @@ Videos
 
 Screenshots
 ===========
+![ScreenShot](https://github.com/trbala0205/Baby-health-app/blob/master/screenshots/1.baby_list.png?raw=true)
 
 ![ScreenShot](https://github.com/trbala0205/Baby-health-app/blob/master/screenshots/add_bio_page.png?raw=true)
 
